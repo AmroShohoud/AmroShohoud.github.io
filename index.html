@@ -3,118 +3,246 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marina Ice Co. | Premium Shave Ice Catering Bay Area</title>
-  <meta name="description" content="Marina Ice Co. provides premium Hawaiian-style shave ice catering for Bay Area corporate events, weddings, and bar & bat mitzvahs." />
-  <meta name="keywords" content="premium shave ice catering bay area, corporate event dessert catering, bar mitzvah dessert vendor, wedding dessert catering" />
-  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Marina Ice Co. | Premium Shave Ice Catering – Bay Area</title>
+  <meta name="description" content="Luxury Hawaiian shave ice catering for corporate events, weddings, bar & bat mitzvahs, quinceañeras, and upscale private events throughout the San Francisco Bay Area." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- SCHEMA MARKUP -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CateringBusiness",
+    "@id": "https://marinaiceco.com/#business",
+    "name": "Marina Ice Co.",
+    "url": "https://marinaiceco.com",
+    "logo": "https://marinaiceco.com/logo.png",
+    "image": "https://marinaiceco.com/hero.jpg",
+    "description": "Premium Hawaiian shave ice catering for corporate events, weddings, bar and bat mitzvahs, quinceañeras, and upscale private events throughout the San Francisco Bay Area.",
+    "telephone": "+1-510-588-7907",
+    "priceRange": "$$$",
+    "servesCuisine": "Shave Ice, Frozen Desserts",
+    "areaServed": [
+      { "@type": "City", "name": "San Francisco" },
+      { "@type": "City", "name": "Oakland" },
+      { "@type": "City", "name": "Berkeley" },
+      { "@type": "City", "name": "Walnut Creek" },
+      { "@type": "City", "name": "San Ramon" },
+      { "@type": "City", "name": "Hayward" },
+      { "@type": "AdministrativeArea", "name": "San Francisco Bay Area" }
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "name": "Corporate Event Shave Ice Catering",
+        "itemOffered": {
+          "@type": "Service",
+          "serviceType": "Corporate Event Dessert Catering",
+          "provider": { "@id": "https://marinaiceco.com/#business" }
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Wedding Shave Ice Catering",
+        "itemOffered": {
+          "@type": "Service",
+          "serviceType": "Wedding Dessert Catering",
+          "provider": { "@id": "https://marinaiceco.com/#business" }
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Bar & Bat Mitzvah Shave Ice Catering",
+        "itemOffered": {
+          "@type": "Service",
+          "serviceType": "Mitzvah Event Dessert Catering",
+          "provider": { "@id": "https://marinaiceco.com/#business" }
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Quinceañera Shave Ice Catering",
+        "itemOffered": {
+          "@type": "Service",
+          "serviceType": "Quinceañera Dessert Catering",
+          "provider": { "@id": "https://marinaiceco.com/#business" }
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Luxury Private Event Shave Ice Catering",
+        "itemOffered": {
+          "@type": "Service",
+          "serviceType": "Private Event Dessert Catering",
+          "provider": { "@id": "https://marinaiceco.com/#business" }
+        }
+      }
+    ]
+  }
+  </script>
 </head>
-<body class="bg-white text-gray-900">
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">Marina Ice Co.</div>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#planners">Planners</a>
+      <a href="#inquiry" class="nav-cta">Request a Quote</a>
+    </nav>
+  </div>
+</header>
 
 <!-- HERO -->
-<section class="max-w-6xl mx-auto px-6 py-24">
-  <p class="text-sm uppercase tracking-widest text-gray-500">Bay Area Event Catering</p>
-  <h1 class="text-5xl md:text-6xl font-light mt-4">Marina Ice Co.</h1>
-  <p class="mt-6 text-xl max-w-2xl">Premium Hawaiian-style shave ice catering for corporate events, weddings, and bar & bat mitzvahs.</p>
-  <p class="mt-4 max-w-2xl text-gray-600">Clean presentation. Fast service. Indoor-friendly. Designed for high-expectation events.</p>
-  <div class="mt-8 flex gap-4">
-    <a href="#quote" class="bg-black text-white px-6 py-3">Request a Quote</a>
-    <a href="#services" class="border border-black px-6 py-3">View Services</a>
+<section class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow">Bay Area Event Catering</p>
+    <h1>Premium Shave Ice<br>for Elevated Events</h1>
+    <p class="hero-sub">
+      High-end Hawaiian shave ice catering for corporate events,
+      weddings, and upscale private celebrations.
+    </p>
+    <a href="#inquiry" class="primary-btn">Request a Quote</a>
   </div>
 </section>
 
-<!-- TRUST SIGNALS -->
-<section class="bg-gray-50 py-12">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-5 gap-6 text-sm text-gray-600">
-    <div>150+ guests/hour</div>
+<!-- TRUST -->
+<section class="trust">
+  <div class="container trust-grid">
+    <div>150+ guests per hour</div>
     <div>Indoor & outdoor capable</div>
-    <div>Fully insured</div>
     <div>Quiet, battery-powered</div>
-    <div>Fully vegan options</div>
+    <div>Fully insured</div>
+    <div>Vegan & dairy-free options</div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="max-w-6xl mx-auto px-6 py-20">
-  <h2 class="text-3xl font-light">Services</h2>
-  <div class="mt-12 grid md:grid-cols-3 gap-10">
-    <div>
-      <h3 class="text-xl mb-3">Corporate Events</h3>
-      <p class="text-gray-600">Employee appreciation, product launches, conferences, and client activations. Designed for speed, cleanliness, and professionalism.</p>
-    </div>
-    <div>
-      <h3 class="text-xl mb-3">Bar & Bat Mitzvahs</h3>
-      <p class="text-gray-600">High-volume service with a refined look parents and planners trust. Proven crowd favorite.</p>
-    </div>
-    <div>
-      <h3 class="text-xl mb-3">Weddings</h3>
-      <p class="text-gray-600">A refreshing alternative to traditional desserts with a neutral aesthetic that complements modern venues.</p>
+<section id="services" class="section">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="three-col">
+      <div>
+        <h3>Corporate Events</h3>
+        <p>Employee appreciation, conferences, and brand activations executed with speed and polish.</p>
+      </div>
+      <div>
+        <h3>Celebrations</h3>
+        <p>Weddings, bar & bat mitzvahs, quinceañeras, and milestone events.</p>
+      </div>
+      <div>
+        <h3>Private & Luxury Events</h3>
+        <p>Refined dessert service for clients who care about presentation and experience.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section class="bg-gray-50 py-20">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-light">The Marina Ice Co. Experience</h2>
-    <div class="mt-12 grid md:grid-cols-3 gap-10">
+<section id="experience" class="section alt">
+  <div class="container">
+    <h2>The Marina Ice Co. Experience</h2>
+    <div class="three-col">
       <div>
-        <h4 class="font-medium mb-2">Elegant Setup</h4>
-        <p class="text-gray-600">Minimalist white bar that integrates seamlessly into upscale indoor and outdoor venues.</p>
+        <h4>Minimalist Setup</h4>
+        <p>Clean white bar designed to integrate seamlessly into upscale venues.</p>
       </div>
       <div>
-        <h4 class="font-medium mb-2">Authentic Hawaiian Ice</h4>
-        <p class="text-gray-600">Ultra-fine ice texture using professional-grade machines for a smooth, premium finish.</p>
+        <h4>Authentic Ice Texture</h4>
+        <p>Ultra-fine Hawaiian-style shave ice using professional-grade equipment.</p>
       </div>
       <div>
-        <h4 class="font-medium mb-2">Efficient Service</h4>
-        <p class="text-gray-600">Multiple machines and trained attendants allow us to serve 150+ guests per hour.</p>
+        <h4>Professional Execution</h4>
+        <p>Fast service, trained staff, and clear communication from inquiry to breakdown.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FLAVORS -->
-<section class="max-w-6xl mx-auto px-6 py-20">
-  <h2 class="text-3xl font-light">Flavors</h2>
-  <p class="mt-4 text-gray-600 max-w-3xl">A curated menu including all-natural and sugar-free options. Custom menus available.</p>
-  <p class="mt-6 text-gray-700">Mango • Strawberry • Coconut • Pineapple • Guava • Blood Orange • Blue Raspberry • Tiger’s Blood • Watermelon</p>
-</section>
-
-<!-- EVENT PLANNERS -->
-<section class="bg-gray-50 py-20">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-light">For Event Planners</h2>
-    <p class="mt-6 max-w-3xl text-gray-600">Marina Ice Co. is built to be easy to work with. Clean load-in, minimal coordination, reliable execution.</p>
-    <ul class="mt-6 list-disc pl-6 text-gray-600">
+<!-- PLANNERS -->
+<section id="planners" class="section">
+  <div class="container narrow">
+    <h2>For Event Planners</h2>
+    <p>
+      Marina Ice Co. is designed for planners who value reliability,
+      clean execution, and vendors that understand premium events.
+    </p>
+    <ul class="bullet-list">
       <li>Indoor venue compatible</li>
-      <li>Quiet operation</li>
-      <li>Clear pricing and communication</li>
-      <li>Proposal-ready language available</li>
+      <li>High-volume guest service</li>
+      <li>Professional load-in & breakdown</li>
+      <li>Proposal-ready service descriptions</li>
     </ul>
   </div>
 </section>
 
-<!-- QUOTE -->
-<section id="quote" class="max-w-6xl mx-auto px-6 py-24">
-  <h2 class="text-3xl font-light">Request a Quote</h2>
-  <p class="mt-4 text-gray-600">Tell us about your event and we’ll tailor a package to your needs.</p>
-  <form action="https://formspree.io/f/xbdywnkk" method="POST" class="mt-8 grid md:grid-cols-2 gap-6 max-w-3xl">
-    <input class="border p-3" placeholder="Event Type" />
-    <input class="border p-3" placeholder="Event Date" />
-    <input class="border p-3" placeholder="City / Venue" />
-    <input class="border p-3" placeholder="Estimated Guest Count" />
-    <textarea class="border p-3 md:col-span-2" placeholder="Tell us more about your event"></textarea>
-    <button class="bg-black text-white px-6 py-3 md:col-span-2">Submit Inquiry</button>
-  </form>
+<!-- INQUIRY -->
+<section id="inquiry" class="section alt">
+  <div class="container narrow">
+    <h2>Event Inquiry</h2>
+    <p>Please provide the details below and we’ll respond promptly.</p>
+
+    <form
+      action="https://formspree.io/f/xbdywnkk"
+      method="POST"
+      class="inquiry-form"
+    >
+
+      <div class="form-row">
+        <input name="full_name" placeholder="Full Name *" required>
+        <input name="phone" placeholder="Phone Number *" required>
+      </div>
+
+      <div class="form-row">
+        <input type="email" name="email" placeholder="Email Address *" required>
+        <input type="email" name="confirm_email" placeholder="Confirm Email *" required>
+      </div>
+
+      <input name="event_address" placeholder="Event Address">
+      <input name="zip_code" placeholder="Zip Code *" required>
+
+      <div class="form-row">
+        <input type="date" name="event_date" placeholder="Event Date *" required>
+        <select name="event_type" required>
+          <option value="">Event Type *</option>
+          <option>Corporate Event</option>
+          <option>Wedding</option>
+          <option>Bar / Bat Mitzvah</option>
+          <option>Quinceañera</option>
+          <option>Private Event</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <input name="guest_count" placeholder="Estimated Guest Count *" required>
+
+      <textarea name="details" placeholder="Additional Details"></textarea>
+
+      <button type="submit" class="primary-btn full">Submit Inquiry</button>
+    </form>
+  </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-black text-white py-12">
-  <div class="max-w-6xl mx-auto px-6">
-    <p class="text-lg">Marina Ice Co.</p>
-    <p class="text-sm text-gray-400 mt-2">Premium Shave Ice Catering — Bay Area</p>
-    <p class="mt-4 text-sm">Amro Shohoud · AS Concessions, LLC</p>
-    <p class="text-sm">510-588-7907 · amro@asconcessions.com</p>
+<footer class="footer">
+  <div class="container">
+    <p class="footer-logo">Marina Ice Co.</p>
+    <p>Premium Shave Ice Catering — San Francisco Bay Area</p>
+    <p class="footer-small">
+      Operated by AS Concessions, LLC · Amro Shohoud<br>
+      510-588-7907 · amro@asconcessions.com
+    </p>
   </div>
 </footer>
 
