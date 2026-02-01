@@ -49,12 +49,18 @@ a {
   color: #0891b2;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav a {
   margin-left: 32px;
   font-size: 15px;
   font-weight: 500;
   color: #555;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 .nav a:hover {
@@ -339,6 +345,29 @@ textarea {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .header-inner {
+    height: 64px;
+  }
+  
+  .logo {
+    font-size: 16px;
+  }
+  
+  .nav a {
+    margin-left: 16px;
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+  
+  .nav-cta {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+  
+  .hero {
+    padding: 60px 0 80px;
+  }
+  
   .hero h1 {
     font-size: 42px;
   }
@@ -355,9 +384,20 @@ textarea {
     grid-template-columns: 1fr;
   }
   
-  .nav a {
-    margin-left: 20px;
-    font-size: 14px;
+  .inquiry-form input,
+  .inquiry-form select,
+  .inquiry-form textarea {
+    min-height: 50px;
+    padding: 14px;
+    font-size: 16px;
+  }
+  
+  .inquiry-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
   }
   
   .three-col {
@@ -375,5 +415,19 @@ textarea {
   
   .showcase-item img {
     height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav a:not(.nav-cta) {
+    display: none;
+  }
+  
+  .header-inner {
+    padding: 0 16px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
   }
 }
