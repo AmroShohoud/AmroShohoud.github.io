@@ -149,6 +149,44 @@
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section alt">
+  <div class="container narrow">
+    <h2>What Clients Say</h2>
+
+    <div class="testimonial-carousel">
+      <div class="testimonial-track">
+        <div class="testimonial">
+          <p class="quote">
+            “All of our guests enjoyed the treats so much. Not to mention he was professional, timely, and extremely kind. We will definitely use this business again for future parties! Thank you again”
+          </p>
+          <p class="author">— Birthday Planner, Dublin</p>
+        </div>
+
+        <div class="testimonial">
+          <p class="quote">
+            “Their handcrafted shaved ice is a crowd favorite with both our community and staff. Every treat is individually handcrafted for you, the way you want it, and the flavor options are incredible! From mango and chamoy to coconut cream and peach, every bite is packed with a refreshing taste. Not only is their shaved ice delicious, but the team is also dependable, great communicators, and always brings great energy. Whether you're looking for a sweet summer treat or a fun vendor for your next event, we highly recommend!”
+          </p>
+          <p class="author">— Pool Manager, San Jose</p>
+        </div>
+
+        <div class="testimonial">
+          <p class="quote">
+            “They brought delicious shaved ice and good vibes for our graduate students in the midst of their finals. Thank you for coming out and making our Earth Day so special 🌎”
+          </p>
+          <p class="author">— Dominican University, San Rafael</p>
+        </div>
+      </div>
+
+      <div class="testimonial-dots">
+        <button data-slide="0" class="active"></button>
+        <button data-slide="1"></button>
+        <button data-slide="2"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- SERVICES -->
 <section id="services" class="section">
   <div class="container">
@@ -289,13 +327,45 @@
   <div class="container">
     <p class="footer-logo">Marina Ice Co.</p>
     <p>Premium Shave Ice Catering - San Francisco Bay Area</p>
-    <p>Serving: San Francisco | Oakland | Berkeley | Alameda | Walnut Creek | San Rafael</p>
+    <p>Serving: San Francisco | Oakland | Berkeley | Alameda | Walnut Creek | San Rafael | Dublin | San Leandro | San Jose</p>
     <p class="footer-small">
       Operated by AS Concessions, LLC<br>
       <a href="tel:+15105887907">510-588-7907</a> · <a href="mailto:info@asconcessions.com">info@asconcessions.com</a>
     </p>
   </div>
 </footer>
+
+<script>
+  const track = document.querySelector('.testimonial-track');
+  const dots = document.querySelectorAll('.testimonial-dots button');
+  let index = 0;
+  let interval;
+
+  function goToSlide(i) {
+    index = i;
+    track.style.transform = `translateX(-${i * 100}%)`;
+    dots.forEach(d => d.classList.remove('active'));
+    dots[i].classList.add('active');
+  }
+
+  function startAutoSlide() {
+    interval = setInterval(() => {
+      index = (index + 1) % dots.length;
+      goToSlide(index);
+    }, 5000);
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      clearInterval(interval);
+      goToSlide(Number(dot.dataset.slide));
+      startAutoSlide();
+    });
+  });
+
+  startAutoSlide();
+</script>
+
 
 </body>
 </html>
